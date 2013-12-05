@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
  @author Malcolm Haslam <mhaslam@runmyprocess.com>
@@ -69,12 +68,7 @@
 		<name>Temporary Staging Repository</name>
 		<url>file://${project.build.directory}/mvn-repo</url>
 	</repository>
-<!--
-        <repository>
-            <id>runmyprocess-nexus</id>
-            <name>runmyprocess nexus</name>
-            <url>https://repository2.runmyprocess.com/nexus/content/repositories/releases/</url>
-        </repository>-->
+
     </distributionManagement>
     <build>
         <plugins>
