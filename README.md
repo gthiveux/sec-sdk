@@ -6,13 +6,17 @@ The SEC-SDK contains classes required by the "SEC - Protocol Manager". It also c
 
 Generating the jar file
 -----------------------
-To generate the jar file simply download the sorce code and run mvn clean install on the root directory. Maven will download all dependecies and generate the jar file.
+To generate the jar file simply download the source code and run 
+
+`mvn clean install`
+
+ on the root directory. Maven will download all dependencies and generate the jar file.
 
 You can then use the jar file in your projects.
 
 The generic Handler
 --------------------
-The SDK also contains the generic handler. This class aids in the development of java Adapters for the SEC. 
+The SDK also contains the generic handler. This class aids in the development of Java Adapters for the SEC. 
 
 
 
