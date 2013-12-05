@@ -38,7 +38,6 @@ We will create 2 classes : the Handler and the Adapter.
 The Handler will create a new instance of the GPH with the configuration information. For this example, we will create a class called **HelloWorldHandler**.
 The code for the Handler looks as following :
 
-	:::JAVA
 	package com.runmyprocess.sec;
 	
 	import java.io.File;
@@ -69,7 +68,6 @@ This is the starting point of our Adapter. We are importing:
 
 The main method is run when starting the adapter. It will first create a new instance of the GPH and load then load the config files. For this example we are loading the handlers config file from a folder named "configFiles". The handler config file should look like this:
 	
-	:::XML
 	#Generic Protocol Configuration
 	protocol = HelloWorld
 	protocolClass = com.runmyprocess.sec.HelloWorld
@@ -100,7 +98,6 @@ It contains two methods to be overridden :
 
 The Adapter code should look as follows:
 
-	:::JAVA
 	package com.runmyprocess.sec;
 
 	import java.util.logging.Level;
@@ -156,7 +153,6 @@ Testing the adapter is quite simple. Simply run the **HelloWorldHandler** or pac
 When started the Adapter will look into the "**configFiles**" folder and get the config file for the handler. 
 To obtain a JSONObject response with a message property containing "Hello World! we are online!" the body of the POST should look like this :
 
-	:::JSON
 	{
 	"protocol":"HelloWorld",
 	"data":{
@@ -166,5 +162,4 @@ To obtain a JSONObject response with a message property containing "Hello World!
 
 The response object should look like this :
 
-	:::JSON
 	{"SECStatus":200,"Message":"Hello World! we are online!"}
