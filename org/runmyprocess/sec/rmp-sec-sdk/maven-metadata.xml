@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.runmyprocess.sec</groupId>
+  <artifactId>rmp-sec-sdk</artifactId>
+  <version>1.0</version>
+  <versioning>
+    <versions>
+      <version>1.0</version>
+    </versions>
+    <lastUpdated>20131205104339</lastUpdated>
+  </versioning>
+</metadata>
