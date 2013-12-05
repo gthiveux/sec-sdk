@@ -10,6 +10,27 @@ To generate the jar file simply download the sorce code and run mvn clean instal
 
 You can then use the jar file in your projects.
 
+You can also add the project as a maven dependency on your project. To do this, simply add the project mvn-repo branch as a repository on your maven pom.mxl file:
+
+	<repositories>
+	        <repository>
+	            <id>json-mvn-repo</id>
+	            <url>https://raw.github.com/runmyprocess/sec-sdk/mvn-repo/</url>
+	            <snapshots>
+	                <enabled>true</enabled>
+	                <updatePolicy>always</updatePolicy>
+	            </snapshots>
+	        </repository>
+	</repositories>
+	
+You can then add your project's dependency:
+
+	<dependency>
+		<groupId>org.runmyprocess</groupId>
+		<artifactId>rmp-sec-sdk</artifactId>
+		<version>1.0</version>
+	</dependency>
+
 The generic Handler
 --------------------
 The SDK also contains the generic handler. This class aids in the development of java Adapters for the SEC. 
