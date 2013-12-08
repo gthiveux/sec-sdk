@@ -8,9 +8,9 @@ Generating the jar file
 -----------------------
 To generate the jar file simply download the source code and run :
 
-`mvn clean install`
+	mvn clean install
 
- in the root directory. Maven will download all dependencies and generate the jar file.
+in the root directory. Maven will download all dependencies and generate the jar file.
 
 You can then use the jar file in your projects.
 
@@ -90,7 +90,7 @@ Where :
 * **connectionPort** is the port of the adapter where data will be received and returned.
 * **managerHost** is where the SEC is running. 
 * **managerPort** is the port where the SEC is listening for ping registrations.
-* **pingFrequency** is the frequency in which the manager will be ping (at least three times shorter than what's configured in the manager).
+* **pingFrequency** is the frequency in which the manager will be pinged (at least three times shorter than what's configured in the manager).
 
 
 ###Adapter
